@@ -1,0 +1,13 @@
+name: First workflow
+
+on: workflow_dispatch # events when the workflow will trigger, workflow_dispatch requires manual trigger
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest 
+    # specify runner from here https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job#standard-github-hosted-runners-for-public-repositories
+    steps:
+     - name: print greeting
+       run: echo "Hello! it is first job first step"
+     - name: say goodbye
+       run: echo "Bye it's first job's last step"
