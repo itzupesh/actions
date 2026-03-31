@@ -9,5 +9,8 @@ jobs:
     steps:
      - name: print greeting
        run: echo "Hello! it is first job first step"
+     - name: testing variable access
+       run: echo "${{ github }}"
      - name: say goodbye
        run: echo "Bye it's first job's last step"
+    
