@@ -5,7 +5,7 @@ on: workflow_dispatch # events when the workflow will trigger, workflow_dispatch
 jobs:
   first-job:
     runs-on: ubuntu-latest 
-    # specify runner from here https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job#standard-github-hosted-runners-for-public-repositories
+    # specify runner from here https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job
     steps:
      - name: print greeting
        run: echo "Hello! it is first job first step"
